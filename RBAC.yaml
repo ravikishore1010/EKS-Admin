@@ -30,7 +30,7 @@ metadata:
   name: cluster-reader
 rules:
 - apiGroups: ["*"]
-  resources: ["nodes","namespaces","services","deployments","customresourcedefinitions"]
+  resources: ["nodes","namespaces","services","deployments","customresourcedefinitions","storageclasses"]
   verbs: ["get", "watch", "list"]
 ---
 apiVersion: rbac.authorization.k8s.io/v1
